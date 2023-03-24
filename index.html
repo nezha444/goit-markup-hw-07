@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/visually-hidden.css">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/visually-hidden.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
-    
-    <header class="header">
+  <body>
+    <!-- <header class="header">
 
         <div class="container flex-containre ">      
             <nav class="nav">
@@ -43,17 +48,17 @@
             </address>
         </div>
 
-    </header>
+    </header> -->
 
     <main class="main">
-        <section class="section-main">
+      <!-- <section class="section-main">
             <div class="container flex-containre">
                 <h1>Effective Solutions for Your Business</h1>
                 <button data-modal-open class="button main-section-button" type="button">Order Service</button>
             </div>
-        </section>
+        </section> -->
 
-        <section class="skills">
+      <section class="skills">
             <div class="container">
                 <h2 class="visually-hidden"></h2>
                 <ul class="skills-items">
@@ -97,23 +102,90 @@
             </div>
         </section>
 
-        <section class="doings">
-            <div class="container">
-                <h2 class="title">What are we doing</h2>
-                <ul class="doings-imgs">
-                    <li class="doings-img-li"><img class="doings-img" src="./images/doing1.jpg" alt="img" width="360"></li>
-                    <li class="doings-img-li"><img class="doings-img" src="./images/doing2.jpg" alt="img" width="360"></li>
-                    <li class="doings-img-li"><img class="doings-img" src="./images/doing3.jpg" alt="img" width="360"></li>
-                </ul>
-            </div>
-        </section>
+      <section class="doings">
+        <div class="container">
+          <h2 class="title doing">What are we doing</h2>
+          <ul class="doings-imgs">
+            <li class="doings-img-li">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/doings-1@1x.jpg 1x,
+                    ./images/desktop/doings-1@2x.jpg 2x,
+                    ./images/desktop/doings-1@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="#" alt="" />
+              </picture>
+            </li>
+            <li class="doings-img-li">
 
-        <section class="team">
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/doings-2@1x.jpg 1x,
+                    ./images/desktop/doings-2@2x.jpg 2x,
+                    ./images/desktop/doings-2@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="#" alt="" />
+              </picture>
+
+            </li>
+            <li class="doings-img-li">
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/doings-3@1x.jpg 1x,
+                    ./images/desktop/doings-3@2x.jpg 2x,
+                    ./images/desktop/doings-3@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="#" alt="" />
+              </picture>
+
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="team">
             <div class="container">
                 <h2 class="title">Our Team</h2>
                 <ul class="team-cards">
                     <li class="card">
-                        <img src="./images/team1.jpg" alt="img" width="264">
+                        <picture>
+                            <source
+                              srcset="
+                                ./images/desktop/team-1@1x.jpg 1x,
+                                ./images/desktop/team-1@2x.jpg 2x,
+                                ./images/desktop/team-1@3x.jpg 3x
+                              "
+                              media="(min-width: 1200px)"
+                            />
+                            <source
+                              srcset="
+                                ./images/tablet/team-1@1x.jpg 1x,
+                                ./images/tablet/team-1@2x.jpg 2x,
+                                ./images/tablet/team-1@3x.jpg 3x
+                              "
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                              ./images/mobile/team-1@1x.jpg 1x,
+                              ./images/mobile/team-1@2x.jpg 2x,
+                              ./images/mobile/team-1@3x.jpg 3x
+                            "
+                            media="(max-width: 767px)"
+                          />
+
+                            <img src="#" alt="" />
+                          </picture>
                         <div class="card-info-cont">
                             <div class="card-team-info">
                                 <h3 class="team-name">Mark Guerrero</h3>
@@ -155,7 +227,34 @@
                     </li>
     
                     <li class="card">
-                        <img src="./images/team2.jpg" alt="img" width="264">                   
+                        <picture>
+                            <source
+                              srcset="
+                                ./images/desktop/team-2@1x.jpg 1x,
+                                ./images/desktop/team-2@2x.jpg 2x,
+                                ./images/desktop/team-2@3x.jpg 3x
+                              "
+                              media="(min-width: 1200px)"
+                            />
+                            <source
+                              srcset="
+                                ./images/tablet/team-2@1x.jpg 1x,
+                                ./images/tablet/team-2@2x.jpg 2x,
+                                ./images/tablet/team-2@3x.jpg 3x
+                              "
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                              ./images/mobile/team-2@1x.jpg 1x,
+                              ./images/mobile/team-2@2x.jpg 2x,
+                              ./images/mobile/team-2@3x.jpg 3x
+                            "
+                            media="(max-width: 767px)"
+                          />
+
+                            <img src="#" alt="" />
+                          </picture>
                         <div class="card-info-cont">
                             <div class="card-team-info">
                                 <h3 class="team-name">Tom Ford</h3>
@@ -197,7 +296,34 @@
                     </li>
     
                     <li class="card">
-                        <img src="./images/team3.jpg" alt="img" width="264">                    
+                        <picture>
+                            <source
+                              srcset="
+                                ./images/desktop/team-3@1x.jpg 1x,
+                                ./images/desktop/team-3@2x.jpg 2x,
+                                ./images/desktop/team-3@3x.jpg 3x
+                              "
+                              media="(min-width: 1200px)"
+                            />
+                            <source
+                              srcset="
+                                ./images/tablet/team-3@1x.jpg 1x,
+                                ./images/tablet/team-3@2x.jpg 2x,
+                                ./images/tablet/team-3@3x.jpg 3x
+                              "
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                              ./images/mobile/team-3@1x.jpg 1x,
+                              ./images/mobile/team-3@2x.jpg 2x,
+                              ./images/mobile/team-3@3x.jpg 3x
+                            "
+                            media="(max-width: 767px)"
+                          />
+
+                            <img src="#" alt="" />
+                          </picture>
                         <div class="card-info-cont">
                             <div class="card-team-info">
                                 <h3 class="team-name">Camila Garcia</h3>
@@ -239,7 +365,34 @@
                     </li>
     
                     <li class="card">
-                        <img src="./images/team4.jpg" alt="img" width="264">                
+                        <picture>
+                            <source
+                              srcset="
+                                ./images/desktop/team-4@1x.jpg 1x,
+                                ./images/desktop/team-4@2x.jpg 2x,
+                                ./images/desktop/team-4@3x.jpg 3x
+                              "
+                              media="(min-width: 1200px)"
+                            />
+                            <source
+                              srcset="
+                                ./images/tablet/team-4@1x.jpg 1x,
+                                ./images/tablet/team-4@2x.jpg 2x,
+                                ./images/tablet/team-4@3x.jpg 3x
+                              "
+                              media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="
+                              ./images/mobile/team-4@1x.jpg 1x,
+                              ./images/mobile/team-4@2x.jpg 2x,
+                              ./images/mobile/team-4@3x.jpg 3x
+                            "
+                            media="(max-width: 767px)"
+                          />
+
+                            <img src="#" alt="" />
+                          </picture>
                         <div class="card-info-cont">
                             <div class="card-team-info">
                                 <h3 class="team-name">Daniel Wilson</h3>
@@ -277,13 +430,13 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>           
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
-        
-        <section class="customers">
+
+      <section class="customers">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list">
@@ -336,11 +489,11 @@
 
     <footer class="footer">
         <div class="container footer-cont-flex">  
-            <div class="footer-logo-text">
+            <div class="footer-logo-text footer-margin-b">
                 <a class="footer-logo" href="./index.html"> <span class="logo-blue">Web</span>Studio</a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p> 
             </div>           
-            <div class="footer-social-media-cont">
+            <div class="footer-social-media-cont footer-margin-b">
                 <p class="footer-social-media-text">Social media</p>                 
                 <ul class="social-list">
                     <li class="social-item">
@@ -373,9 +526,8 @@
                     </li>
                 </ul>
             </div>
-<!-- FORM_FOOTER -->
             <div class="cont-form-footer">
-                <p class="footel-lable">Subscribe</p>
+                <p class="footel-lable text">Subscribe</p>
                 <form class="footer-form" action="">
                     <label class="footel-lable">
                         <input class="footer-input" type="email" name="email" placeholder="E-mail">
@@ -388,79 +540,83 @@
                     </button>
                 </form>
             </div>
-<!-- FORM_FOOTER -->
         
         </div>
     </footer>
 
-        <div class="backdrop is-hidden" data-modal >
-            <div class="modal">
-                <button data-modal-close class="modal-button" type="button">
-                    <svg class="icon-close">
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-            
-                <p class="model-text">Leave your contacts and we will call you back</p>
-<!-- form -->
-                <form class="modal-form" action="">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-button" type="button">
+          <svg class="icon-close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
 
-                    <label class="label">
-                        Name
-                        <input  class="input" type="name" name="username" autofocus>
-                        <span>
-                            <svg class="form-svg">
-                                <use href="./images/sprite.svg#icon-humen"></use>
-                            </svg>
-                        </span>
-                    </label>
+        <p class="model-text">Leave your contacts and we will call you back</p>
+        <!-- form -->
+        <form class="modal-form" action="">
+          <label class="label">
+            Name
+            <input class="input" type="name" name="username" autofocus />
+            <span>
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#icon-humen"></use>
+              </svg>
+            </span>
+          </label>
 
-                    <label class="label">
-                        Phone
-                        <input  class="input" type="phone" name="userphone">
-                        <span>
-                            <svg class="form-svg">
-                                <use href="./images/sprite.svg#icon-phone"></use>
-                            </svg>
-                        </span>
-                    </label>
+          <label class="label">
+            Phone
+            <input class="input" type="phone" name="userphone" />
+            <span>
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
 
-                    <label class="label">
-                        Email
-                        <input  class="input" type="email" name="usermail">
-                        <span>
-                            <svg class="form-svg">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                        </span>
-                    </label>
+          <label class="label">
+            Email
+            <input class="input" type="email" name="usermail" />
+            <span>
+              <svg class="form-svg">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </span>
+          </label>
 
-                    <label class="label form-textarea">
-                        Comment
-                        <textarea class="input-textarea" name="" id="" width="360" height="120" placeholder="Text input"></textarea>
-                    </label>
+          <label class="label form-textarea">
+            Comment
+            <textarea
+              class="input-textarea"
+              name=""
+              id=""
+              width="360"
+              height="120"
+              placeholder="Text input"
+            ></textarea>
+          </label>
 
-                    <label class="label-checkbox">
-                        <input class="checkbox visually-hidden" type="checkbox">
-                        <span class="checkbox-castom">
-                            <svg class="form-checkbox-icon">
-                                <use href="./images/sprite.svg#icon-checkbox"></use>
-                            </svg>
-                        </span>
-                        <p class="checkbox-custom-text">I accept the terms and conditions of the <a class="label-checkbox-link" href="">Privacy Policy</a></p>
-                    </label>
-                
-                    <button class="form-button button" type="submit">Send</button>
-                    
-                </form>
-<!-- form -->
-            </div>
-        </div>
+          <label class="label-checkbox">
+            <input class="checkbox visually-hidden" type="checkbox" />
+            <span class="checkbox-castom">
+              <svg class="form-checkbox-icon">
+                <use href="./images/sprite.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <p class="checkbox-custom-text">
+              I accept the terms and conditions of the
+              <a class="label-checkbox-link" href="">Privacy Policy</a>
+            </p>
+          </label>
 
-        <!--  -->
-<script src="./js/modal.js"></script>
-</body>
+          <button class="form-button button" type="submit">Send</button>
+        </form>
+        <!-- form -->
+      </div>
+    </div>
+
+    <!--  -->
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
-
-
- 
