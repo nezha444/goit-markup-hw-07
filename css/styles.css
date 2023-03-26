@@ -1032,6 +1032,9 @@ textarea{
   right: 24px;
 }
 
+.mob-modal-address{
+  margin-bottom: 48px;
+}
 
 .mob-modal-nav-list{
   display: flex;
@@ -1063,7 +1066,7 @@ textarea{
 }
 
 .mob-modal-tel{
-  color: #434455;
+  color: var(--color-iris);
   font-weight: 700;
   font-size: 30px;
   line-height: calc(35 / 30);
@@ -1087,7 +1090,11 @@ textarea{
 .mob-modal-list-social-icons{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mob-modal-item-social{
+  margin-right: 56px;
 }
 
 .mob-modal-link-social{
@@ -1278,7 +1285,9 @@ textarea{
 }
 
 .footer-cont-flex{
+  width: 570px;
   justify-content: flex-start;
+
 }
 
 .footer-logo{
