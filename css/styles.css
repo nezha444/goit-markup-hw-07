@@ -1470,6 +1470,10 @@ textarea{
 
 /* footer */
 
+.footer-cont-flex{
+  width: 100%;
+}
+
 .footer-margin-b{
   margin-bottom: 0px;
 }
